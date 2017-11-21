@@ -70,7 +70,6 @@ static void command_append_arg(command* c, char* word) {
 
 pid_t start_command(command* c, pid_t pgid) {
     (void) pgid;
-    // Your code here!
     fprintf(stderr, "start_command not done yet\n");
     return c->pid;
 }
@@ -106,8 +105,6 @@ void run_list(command* c) {
 void eval_line(const char* s) {
     int type;
     char* token;
-    // Your code here!
-
     // build the command
     command* c = command_alloc();
     while ((s = parse_shell_token(s, &type, &token)) != NULL) {
